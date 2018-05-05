@@ -28,6 +28,11 @@ Rails.application.configure do
   end
   Rails.application.config.action_cable.allowed_request_origins = ['ws://localhost:3000']
   config.action_cable.url = "ws://localhost:3000/cable"
+  # config.standalone = true
+  # config.redis_options = {:host => 'localhost', :port => '6379'}
+  # config.synchronize = false
+  
+
   # Store uploaded files on the local file system (see config/storage.yml for options)
   config.active_storage.service = :local
 
